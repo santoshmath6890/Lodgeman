@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, label-bright, label-header, table-cell, table-row-cell, table-view, text-field" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.ConfigController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1068.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1068.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="82.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Button layoutX="112.0" layoutY="213.0" mnemonicParsing="false" onAction="#processAskMoreAdvance" prefHeight="114.0" prefWidth="228.0" text="Ask More Advance">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x1">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Button effect="$x1" layoutX="391.0" layoutY="213.0" mnemonicParsing="false" onAction="#processCancelBooking" prefHeight="114.0" prefWidth="219.0" text="Cancel Booking" />
+    <Button effect="$x1" layoutX="664.0" layoutY="213.0" mnemonicParsing="false" onAction="#processCreditOwners" prefHeight="114.0" prefWidth="219.00009999999747" text="New Credit Owner" />
+    <Button layoutX="940.0" layoutY="213.0" mnemonicParsing="false" onAction="#processCreditbillView" prefHeight="114.0" prefWidth="262.0" text="View Credit Amount" />
+    <Button effect="$x1" layoutX="112.0" layoutY="367.0" mnemonicParsing="false" onAction="#processMyAccout" prefHeight="114.0" prefWidth="228.0" text="My Account" />
+    <Button effect="$x1" layoutX="390.0" layoutY="367.0" mnemonicParsing="false" onAction="#processAdvanceLogView" prefHeight="114.0" prefWidth="220.0" text="View Advance Log" />
+    <Button effect="$x1" layoutX="660.0" layoutY="367.0" mnemonicParsing="false" onAction="#processBookingLogView" prefHeight="114.0" prefWidth="228.0" text="View Bookings log" />
+    <Button layoutX="940.0" layoutY="367.0" mnemonicParsing="false" onAction="#processAddAditionalAdvance" prefHeight="114.0" prefWidth="262.0" text="Add Aditional Advance" />
+    <Button effect="$x1" layoutX="112.0" layoutY="523.0" mnemonicParsing="false" onMouseClicked="#processHistory" prefHeight="114.0" prefWidth="228.0" text="History" />
+    <Button effect="$x1" layoutX="391.0" layoutY="523.0" mnemonicParsing="false" onAction="#processSetting" prefHeight="114.0" prefWidth="228.0" text="Settings" />
+    <Button effect="$x1" layoutX="660.0" layoutY="523.0" mnemonicParsing="false" onAction="#processReports" prefHeight="114.0" prefWidth="228.0" text="Reports" />
+    <Button layoutX="940.0" layoutY="515.0" mnemonicParsing="false" onAction="#processCurrentExtraBeds" prefHeight="122.0" prefWidth="262.0" text="Current Extra Beds" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

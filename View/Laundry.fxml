@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, label-bright, label-header, table-cell, table-row-cell, table-view, text-field" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.LaundryController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Button mnemonicParsing="false" onAction="#processLaundryNew" prefHeight="97.0" prefWidth="197.0" text="New Amenity" AnchorPane.leftAnchor="147.0" AnchorPane.topAnchor="246.0">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x1">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Button effect="$x1" layoutX="411.0" layoutY="253.0" mnemonicParsing="false" onAction="#processAmenityFix" prefHeight="97.0" prefWidth="197.0" text="Quick Amenity Fix" />
+    <Button effect="$x1" layoutX="660.0" layoutY="253.0" mnemonicParsing="false" onAction="#processAmenityCycle" prefHeight="97.0" prefWidth="204.0" text="Amenity Cycle" />
+    <Button layoutX="922.0" layoutY="253.0" mnemonicParsing="false" onAction="#processAmenityTrack" prefHeight="97.0" prefWidth="218.0" text="Amenity Track" />
+    <Button effect="$x1" layoutX="154.0" layoutY="388.0" mnemonicParsing="false" onAction="#processRoomReady" prefHeight="97.0" prefWidth="197.0" text="Room Ready!" />
+    <Button effect="$x1" layoutX="411.0" layoutY="388.0" mnemonicParsing="false" onAction="#processRoomRecv" prefHeight="97.0" prefWidth="197.0" text="Receive Items" />
+    <Button effect="$x1" layoutX="660.0" layoutY="388.0" mnemonicParsing="false" onAction="#processLaundryLog" prefHeight="97.0" prefWidth="204.0" text="View Laudry Log" />
+    <Button layoutX="922.0" layoutY="388.0" mnemonicParsing="false" onAction="#processLaundryTransaction" prefHeight="97.0" prefWidth="218.0" text="Laundry Transaction" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

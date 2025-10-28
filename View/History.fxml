@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, label-bright, label-header, table-cell, table-row-cell, table-view, text-field" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.HistoryController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Button layoutX="119.0" layoutY="221.0" mnemonicParsing="false" onAction="#processRoomHistory" onMouseClicked="#processRoomHistory" prefHeight="97.0" prefWidth="293.0" text="Room History" />
+    <Button layoutX="473.0" layoutY="221.0" mnemonicParsing="false" onAction="#processDayCollection" prefHeight="97.0" prefWidth="293.0" text="Day Collection" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Button layoutX="119.0" layoutY="393.0" mnemonicParsing="false" onAction="#processAccountantDailyReport" prefHeight="97.0" prefWidth="293.0" text="Accountant Daily Report" />
+    <Button layoutX="473.0" layoutY="393.0" mnemonicParsing="false" onAction="#processAccountantMonthlyReport" prefHeight="97.0" prefWidth="293.0" text="Accountant Monthly Report" />
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

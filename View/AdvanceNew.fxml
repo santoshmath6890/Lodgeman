@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, label-bright, label-header, table-cell, table-row-cell, table-view, text-field" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.AdvanceNewController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="91.0" fitWidth="97.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="91.0" fitWidth="97.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="369.0" layoutY="119.0" prefHeight="31.0" text="Room No" />
+    <TextField fx:id="mUserRoom" layoutX="485.0" layoutY="112.0" onAction="#processCheckRoom" prefHeight="39.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <Button layoutX="726.0" layoutY="112.0" mnemonicParsing="false" onAction="#processCheckRoom" prefHeight="38.999900000002526" text="Search">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label fx:id="LabelEnterAmount" layoutX="325.0" layoutY="180.0" prefHeight="23.0" text="Enter amount" />
+    <TextField fx:id="mUserAmount" layoutX="485.0" layoutY="171.0" onAction="#processDone" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Button fx:id="ButtonAdd" layoutX="726.0" layoutY="168.0" mnemonicParsing="false" onAction="#processDone" prefHeight="38.0" prefWidth="103.0" text="Add">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label fx:id="LabelCustomerName" layoutX="44.0" layoutY="209.0" text="Customer Name" />
+    <TextField fx:id="dGuestName" layoutX="44.0" layoutY="256.0" prefWidth="222.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label fx:id="LabelContactno" layoutX="45.0" layoutY="290.0" prefHeight="39.0" text="Contact no" />
+    <TextField fx:id="dGuestContactNo" effect="$x2" layoutX="45.0" layoutY="336.0" prefWidth="222.0" />
+    <Label fx:id="LabelCustomerID" layoutX="45.0" layoutY="380.0" text="Customer ID" />
+    <TextField fx:id="dGuestId" effect="$x2" layoutX="45.0" layoutY="421.0" prefWidth="222.0" />
+    <ImageView fx:id="dGuestPhoto" fitHeight="192.0" fitWidth="256.0" layoutX="45.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="dInvalidRoom" layoutX="236.0" layoutY="218.0" text="" textFill="#ff3333">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="dInvalidGuestPhoto" font="$x1" layoutX="751.0" layoutY="103.0" text="" textFill="RED" />
+    <TableView fx:id="TableAdvanceList" layoutX="325.0" layoutY="294.0" prefHeight="359.0" prefWidth="802.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="55.0" text="Id" fx:id="ColumnId" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="201.0" text="Guest Name" fx:id="ColumnGuestname" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="135.0" text="Room No" fx:id="ColumnRoomno" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="243.0" text="Receipt Date" fx:id="ColumnReceiptdate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="151.0" text="Advance Paid" fx:id="ColumnAdvancepaid" />
+      </columns>
+      <effect>
+        <DropShadow />
+      </effect>
+    </TableView>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

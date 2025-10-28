@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, text-field, table-view, table-row-cell, table-cell, column-header-background, label, label-bright, label-header" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.BookingRoomChangeController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1068.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1068.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="217.0" layoutY="146.0" text="Roomno" />
+    <TextField fx:id="mUserRoom" onAction="#processSearch" prefHeight="39.0" prefWidth="311.0" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="140.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Button mnemonicParsing="false" onAction="#processSearch" prefWidth="120.0" text="Search" AnchorPane.leftAnchor="710.0" AnchorPane.topAnchor="141.0">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label text="Guest" AnchorPane.leftAnchor="241.0" AnchorPane.topAnchor="217.0" />
+    <TextField fx:id="mGuest" prefHeight="39.0" prefWidth="311.0" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="213.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label layoutX="83.0" layoutY="351.0" text="Available Room No." />
+    <ComboBox id="mRoomNo" fx:id="mRoomList" prefHeight="31.0" prefWidth="140.0" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="339.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button mnemonicParsing="false" onAction="#processDone" prefHeight="39.0" prefWidth="140.0" text="Book" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="421.0">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <ImageView fx:id="mGuestImage" fitHeight="254.0" fitWidth="338.66666666666663" layoutX="777.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="roombookedas" layoutX="334.0" layoutY="268.0" text="" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

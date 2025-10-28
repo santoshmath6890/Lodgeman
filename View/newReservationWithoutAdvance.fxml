@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import jfxtras.labs.scene.control.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, button, column-header, column-header-background, label" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.NewReservationWithoutAdvanceController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1293.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1286.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <jfxtras.labs.scene.control.CalendarTextField fx:id="InputDate" layoutX="403.0" layoutY="176.0" prefHeight="41.0" prefWidth="200.0" />
+    <Label layoutX="405.0" layoutY="140.0" text="Date:">
+      <font>
+        <Font name="Arial" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="720.0" layoutY="140.0" text="Time:" />
+    <Label font="$x1" layoutX="403.0" layoutY="223.0" text="Customer Name" />
+    <TextField fx:id="InputGuestName" layoutX="404.0" layoutY="260.0" prefHeight="41.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <jfxtras.labs.scene.control.CalendarTimeTextField fx:id="InputTime" layoutX="720.0" layoutY="179.0" prefHeight="41.0" prefWidth="133.0" />
+    <Label font="$x1" layoutX="717.0" layoutY="217.0" text="Contact No.:" />
+    <TextField fx:id="InputGuestContactno" layoutX="718.0" layoutY="256.0" prefHeight="41.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label font="$x1" layoutX="407.0" layoutY="301.0" text="City" />
+    <TextField fx:id="InputGuestCity" layoutX="407.0" layoutY="336.0" prefHeight="41.0" prefWidth="132.9998779296875">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label font="$x1" layoutX="717.0" layoutY="297.0" text="No Of People:" />
+    <TextField fx:id="InputGuestNoOfPeople" layoutX="720.0" layoutY="332.0" prefHeight="41.0" prefWidth="133.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label font="$x1" layoutX="407.0" layoutY="382.0" text="Room Type:" />
+    <ComboBox fx:id="allRoomtype" layoutX="405.0" layoutY="418.0" prefHeight="37.0" prefWidth="200.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label font="$x1" layoutX="715.0" layoutY="378.0" text="No Of Rooms:" />
+    <TextField fx:id="inputGuestNoOfRoom" layoutX="718.0" layoutY="418.0" prefHeight="41.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label font="$x1" layoutX="405.0" layoutY="468.0" text="Note:" />
+    <TextArea fx:id="inputNote" layoutX="403.0" layoutY="500.0" prefHeight="82.0" prefWidth="258.0" wrapText="true">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextArea>
+    <Button layoutX="640.0" layoutY="622.0" mnemonicParsing="false" onAction="#processReserve" prefHeight="41.0" prefWidth="140.0" text="Reserve">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

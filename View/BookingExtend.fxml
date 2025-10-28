@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="1068.0" styleClass="button, text-field, table-view, table-row-cell, table-cell, label-header, column-header, column-header-background, fontStyle, label, label-bright" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.BookingExtendController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1068.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1068.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="274.0" layoutY="122.0" text="Enter Room No:" />
+    <TextField fx:id="mUserRoomNo" layoutX="459.0" layoutY="112.0" prefHeight="52.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <TextField fx:id="mRoomNo" layoutX="313.0" layoutY="202.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x1" />
+      </effect>
+    </TextField>
+    <TextField fx:id="mRoomType" layoutX="802.0" layoutY="198.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <TextField fx:id="mGuestName" effect="$x1" layoutX="313.0" layoutY="277.0" prefWidth="200.0" />
+    <TextField fx:id="mBookingDate" effect="$x2" layoutX="802.0" layoutY="273.0" prefWidth="200.0" />
+    <TextField fx:id="mCheckinDate" effect="$x2" layoutX="802.0" layoutY="349.0" prefWidth="200.0" />
+    <TextField fx:id="mExpectedCheckoutDate" effect="$x1" layoutX="313.0" layoutY="351.0" prefWidth="200.0" />
+    <Label layoutX="185.0" layoutY="198.0" text="Roomno" />
+    <Label layoutX="646.0" layoutY="196.0" text="Room Type" />
+    <Label layoutX="163.0" layoutY="277.0" text="Guest name" />
+    <Label layoutX="646.0" layoutY="271.0" text="Booking date" />
+    <Label layoutX="149.0" layoutY="351.0" text="Checkin Date" />
+    <Label layoutX="526.0" layoutY="347.0" text="Expected Checkout Date" />
+    <Button layoutX="313.0" layoutY="497.0" mnemonicParsing="false" prefWidth="200.0" text="Check Availability">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Button layoutX="585.0" layoutY="497.0" mnemonicParsing="false" prefWidth="107.0" text="Book">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <TextField fx:id="mNewCheckoutDate" effect="$x1" layoutX="313.0" layoutY="428.0" prefWidth="200.0" />
+    <Label layoutX="81.0" layoutY="428.0" text="New Checkout date" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xff7a00ff?>
+
+<AnchorPane id="AnchorPane" minHeight="700.0" minWidth="1400.0" prefHeight="700.0" prefWidth="1400.0" styleClass="button" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.HomeController">
+  <children>
+    <ImageView id="Booking (3)" layoutX="122.0" layoutY="125.0" pickOnBounds="true">
+      <image>
+        <Image url="@../media/Booking%20(3).png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="Booking" fitHeight="140.0" fitWidth="205.0" onMouseClicked="#processCheckin" pickOnBounds="true" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="109.0">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/Booking.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="checkout" fitHeight="140.0" fitWidth="200.0" onMouseClicked="#processCheckout" pickOnBounds="true" AnchorPane.leftAnchor="231.0" AnchorPane.topAnchor="109.0">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow blurType="TWO_PASS_BOX" />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/checkout.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="search" fitHeight="140.0" fitWidth="200.0" onMouseClicked="#processViewBooking" pickOnBounds="true" AnchorPane.leftAnchor="444.0" AnchorPane.topAnchor="109.0">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/search.PNG" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="room conversion" fitHeight="127.0" fitWidth="200.0" onMouseClicked="#processBookingRoomChange" pickOnBounds="true" AnchorPane.leftAnchor="231.0" AnchorPane.topAnchor="434.0">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/room%20conversion.PNG" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TableView fx:id="tablereservationremainders" prefHeight="310.0" prefWidth="744.0" AnchorPane.leftAnchor="666.0" AnchorPane.rightAnchor="-10.0" AnchorPane.topAnchor="116.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Room type" fx:id="columnRoomtype" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="42.0" text="No" fx:id="columnNo" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="142.0" text="Name" fx:id="columnName" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="147.0" text="Arrival Date" fx:id="columnArrivalDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="95.0" text="Advance" fx:id="columnAdvance" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="143.0" text="Contact No" fx:id="columnContactno" />
+      </columns>
+      <stylesheets>
+        <URL value="@generic.css" />
+      </stylesheets>
+    </TableView>
+    <ImageView id="Laundry Service" fitHeight="127.00009999999747" fitWidth="200.0" layoutX="688.0" layoutY="441.0" onMouseClicked="#processLaundry" pickOnBounds="true">
+      <effect>
+        <DropShadow>
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/Laundry%20Service.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="reservatioin" fitHeight="127.0001220703125" fitWidth="200.0" layoutX="468.0" layoutY="441.0" onMouseClicked="#processViewEntity" pickOnBounds="true">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/reservatioin.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="Floorwise view" fitHeight="140.00009999999747" fitWidth="200.0" layoutX="468.0" layoutY="274.0" onMouseClicked="#processViewCurrentCustomers" pickOnBounds="true">
+      <effect>
+        <DropShadow>
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/Floorwise%20view.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="booking edit" fitHeight="127.0" fitWidth="200.0" layoutX="35.0" layoutY="441.0" onMouseClicked="#processCurrentBookingEdit" pickOnBounds="true">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/booking%20edit.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="expenses" fitHeight="127.0" fitWidth="200.0" layoutX="907.0" layoutY="441.0" onMouseClicked="#processAccounts" pickOnBounds="true">
+      <effect>
+        <DropShadow>
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/expenses.PNG" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="my accounts" fitHeight="127.0" fitWidth="200.0" layoutX="1130.0" layoutY="441.0" onMouseClicked="#processConfig" pickOnBounds="true">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/my%20accounts.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="extrabed" fitHeight="140.0" fitWidth="200.0" layoutX="32.0" layoutY="274.0" onMouseClicked="#processAddBookingAddon" pickOnBounds="true">
+      <effect>
+        <DropShadow>
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/extrabed.PNG" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="addadvance" fitHeight="140.0" fitWidth="200.0" layoutX="255.0" layoutY="274.0" onMouseClicked="#processAdvanceAdd" pickOnBounds="true">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+      <image>
+        <Image url="@../media/New%20folder/addadvance.PNG" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <AnchorPane prefHeight="82.0" prefWidth="1396.0" AnchorPane.leftAnchor="-20.0" AnchorPane.rightAnchor="-20.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1402.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+      <stylesheets>
+        <URL value="@generic.css" />
+      </stylesheets>
+    </AnchorPane>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="23.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="companylogo" fitHeight="39.0" fitWidth="123.0" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="932.0" layoutY="94.0" text="Reservation Updates" />
+    <Button layoutX="35.0" layoutY="586.0" mnemonicParsing="false" onAction="#processDailyAcitivities" prefHeight="53.0" prefWidth="174.0" text="Daily Activities" />
+    <Button layoutX="232.0" layoutY="586.0" mnemonicParsing="false" onAction="#processDayDetails" prefHeight="53.0" prefWidth="158.0" text="Daily Details" />
+    <Button layoutX="412.0" layoutY="586.0" mnemonicParsing="false" onAction="#processSessionDetails" prefHeight="53.0" prefWidth="174.0" text="Session Details" />
+    <Button layoutX="610.0" layoutY="586.0" mnemonicParsing="false" onAction="#takeBackup" prefHeight="53.0" prefWidth="200.0" text="Take Backup" />
+    <Button layoutX="832.0" layoutY="586.0" mnemonicParsing="false" onAction="#processDuplicateCheckinreceipts" prefHeight="53.0" prefWidth="213.0" text="Checkin's Duplicate" />
+    <Button layoutX="1070.0" layoutY="586.0" mnemonicParsing="false" onAction="#processDuplicateCheckoutBills" prefHeight="53.0" prefWidth="225.0" text="Checkout's Duplicate" />
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

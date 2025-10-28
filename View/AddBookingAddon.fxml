@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="text-field, table-view, table-row-cell, button, column-header, table-cell, column-header-background, label, label-bright, label-header" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.AddBookingAddonController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="120.0" fitWidth="110.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label text="Room" AnchorPane.leftAnchor="386.0" AnchorPane.topAnchor="114.0">
+      <font>
+        <Font size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="UserRoomno" onAction="#processUserRoomno" prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="485.0" AnchorPane.topAnchor="105.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Button mnemonicParsing="false" onAction="#processUserRoomno" prefHeight="50.0" text="Search" AnchorPane.leftAnchor="732.0" AnchorPane.topAnchor="105.0">
+      <effect>
+        <DropShadow>
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+      <font>
+        <Font size="22.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Label fx:id="LabelBookingid" font="$x1" layoutX="26.0" layoutY="454.0" text="BookingId" />
+    <TextField fx:id="UserBookingID" layoutX="26.0" layoutY="486.0" prefHeight="50.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x3" />
+      </effect>
+    </TextField>
+    <Label fx:id="LabelGuestName" font="$x1" layoutX="26.0" layoutY="226.0" text="Guest Name" />
+    <TextField fx:id="UserGuestName" effect="$x3" layoutX="26.0" layoutY="265.0" prefHeight="50.0" prefWidth="225.0" />
+    <Label fx:id="LabelContactno" font="$x1" layoutX="26.0" layoutY="338.0" text="Contact No" />
+    <TextField fx:id="UserContactNo" effect="$x3" layoutX="26.0" layoutY="376.0" prefHeight="50.0" prefWidth="225.0" />
+    <Rectangle fx:id="thisRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="292.0" layoutX="260.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="13.0" />
+    <jfxtras.labs.scene.control.CalendarTextField fx:id="AddonFrom" layoutX="426.0" layoutY="376.0" prefHeight="39.0" prefWidth="160.0" />
+    <Label fx:id="LabelAddonType" font="$x1" layoutX="281.0" layoutY="258.0" text="Addon Type" />
+    <TextField fx:id="AddonType" layoutX="425.0" layoutY="251.0" prefHeight="39.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x4" />
+      </effect>
+    </TextField>
+    <Label fx:id="LabelFrom" font="$x1" layoutX="357.0" layoutY="380.0" text="From" />
+    <Label fx:id="LabelQty" font="$x1" layoutX="319.0" layoutY="322.0" text="Quantity" />
+    <TextField fx:id="AddonQty" effect="$x4" layoutX="426.0" layoutY="315.0" prefHeight="39.0" prefWidth="200.0" />
+    <Button fx:id="ButtonDone" font="$x2" layoutX="426.0" layoutY="447.0" mnemonicParsing="false" onAction="#processDone" prefHeight="50.0" prefWidth="160.0" text="Done">
+      <effect>
+        <DropShadow>
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+    </Button>
+    <TableView fx:id="dTableView" layoutX="638.0" layoutY="242.0" prefHeight="340.0" prefWidth="662.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="57.0" text="oid" fx:id="tOid" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="198.0" text="From" fx:id="tFromDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="196.0" text="To" fx:id="tToDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="Action" fx:id="tActionCol" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="120.0" text="Delete" fx:id="tDeleteCol" />
+      </columns>
+      <effect>
+        <DropShadow>
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+    </TableView>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

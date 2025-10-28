@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="1068.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label, button, column-header, column-header-background, label-bright" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.view.ReservationRemainderController">
+  <children>
+    <Label layoutX="158.0" layoutY="184.0" prefHeight="32.0" prefWidth="187.0" text="Customer Name" />
+    <TextField fx:id="txtCustName" layoutX="380.0" layoutY="181.0" prefHeight="35.0" prefWidth="200.00009999999747">
+      <effect>
+        <InnerShadow fx:id="x1" />
+      </effect>
+    </TextField>
+    <TextField fx:id="txtCustNum2" layoutX="845.0" layoutY="253.0" prefHeight="35.000099999997474" prefWidth="187.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <Label layoutX="601.0" layoutY="258.0" prefHeight="32.0" prefWidth="213.0" text="Customer Number" />
+    <ComboBox fx:id="cmbRoomType" layoutX="847.0" layoutY="332.0" prefHeight="37.0" prefWidth="187.0">
+      <effect>
+        <DropShadow />
+      </effect>
+    </ComboBox>
+    <Label layoutX="608.0" layoutY="329.0" prefHeight="32.0" prefWidth="148.0" text="RoomType" />
+    <jfxtras.labs.scene.control.CalendarTextField fx:id="advDate" layoutX="469.0" layoutY="240.0" prefHeight="50.0" prefWidth="200.0" />
+    <jfxtras.labs.scene.control.CalendarTimeTextField fx:id="time1" layoutX="469.0" layoutY="370.0" prefHeight="50.0" prefWidth="200.0" />
+    <jfxtras.labs.scene.control.CalendarTextField fx:id="currDate" layoutX="469.0" layoutY="300" prefHeight="50.0" prefWidth="200.0" />
+    <jfxtras.labs.scene.control.CalendarTimeTextField fx:id="time2" layoutX="469.0" layoutY="420" prefHeight="50.0" prefWidth="200.0" />
+    <Label layoutX="648.0" layoutY="390.0" prefHeight="22.0" prefWidth="69.0" text="Date" />
+    <Label layoutX="145.0" layoutY="356.0" prefHeight="32.0" prefWidth="187.0" text="Reservation Date" />
+    <Label layoutX="131.0" layoutY="407.0" prefHeight="33.0" prefWidth="201.0" text="Amount Received" />
+    <TextField fx:id="txtAdvRcvd" effect="$x1" layoutX="382.0" layoutY="361.0" prefHeight="35.0" prefWidth="200.0" />
+    <TextField fx:id="txtRmdBfore" effect="$x1" layoutX="381.0" layoutY="412.0" prefHeight="35.0" prefWidth="200.0" />
+    <Label layoutX="119.0" layoutY="468.0" prefHeight="32.0" prefWidth="213.0" text="Remind me before" />
+    <Button fx:id="reservebtn" layoutX="533.0" layoutY="537.0" mnemonicParsing="false" onAction="#reserveClck" prefHeight="38.0" prefWidth="118.0" text="Reserve">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x3">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label layoutX="620.0" layoutY="182.0" prefHeight="32.0" prefWidth="174.0" text="Phone Number" />
+    <Label layoutX="214.0" layoutY="256.0" prefWidth="118.0" text="Address" />
+    <TextArea fx:id="txtCustAddr" layoutX="380.0" layoutY="246.0" prefHeight="95.0" prefWidth="200.0" wrapText="true" />
+    <TextField fx:id="txtCustNum1" effect="$x2" layoutX="845.0" layoutY="179.0" prefHeight="35.0" prefWidth="187.0" />
+    <Button effect="$x3" layoutX="729.0" layoutY="537.0" mnemonicParsing="false" prefWidth="118.0" text="Cancel" />
+    <AnchorPane prefHeight="81.0" prefWidth="1054.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="81.0" prefWidth="1047.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" layoutX="0.0" layoutY="81.0" pickOnBounds="true">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TextField id="txtRmdBfore" effect="$x1" layoutX="382.0" layoutY="470.0" prefHeight="32.0" prefWidth="200.0" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

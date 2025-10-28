@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, button, column-header, column-header-background, label" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.MyAccountController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TextField fx:id="Topeningbalance" layoutX="520.0" layoutY="106.0" prefHeight="41.0" prefWidth="151.0">
+      <effect>
+        <InnerShadow fx:id="x3" />
+      </effect>
+    </TextField>
+    <TextField fx:id="Tadvances" effect="$x3" layoutX="520.0" layoutY="230.0" prefHeight="41.0" prefWidth="151.0" />
+    <TextField fx:id="Treceived" effect="$x3" layoutX="520.0" layoutY="290.0" prefHeight="41.0" prefWidth="151.0" />
+    <TextField fx:id="Tcreditbillrecvd" effect="$x3" layoutX="520.0" layoutY="350.0" prefHeight="41.0" prefWidth="151.0" />
+    <TextField fx:id="Trefund" effect="$x3" layoutX="520.0" layoutY="404.0" prefHeight="41.0" prefWidth="151.0" />
+    <TextField fx:id="Texpenses" effect="$x3" layoutX="520.0" layoutY="456.0" prefHeight="41.0" prefWidth="151.0" />
+    <TextField fx:id="Tcreditbills" effect="$x3" layoutX="520.0" layoutY="512.0" prefHeight="41.0" prefWidth="151.0" />
+    <TextField fx:id="Tclosingbalance" layoutX="520.0" layoutY="583.0" prefHeight="41.0" prefWidth="151.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <Label layoutX="289.0" layoutY="106.0" text="Opening Balance">
+      <font>
+        <Font name="Arial" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="359.0" layoutY="235.0" text="Advance " />
+    <Label font="$x1" layoutX="359.0" layoutY="295.0" text="Received" />
+    <Label font="$x1" layoutX="268.0" layoutY="355.0" text="Credit Bill Received" />
+    <Label font="$x1" layoutX="376.0" layoutY="409.0" text="Refund" />
+    <Label font="$x1" layoutX="355.0" layoutY="461.0" text="Expenses" />
+    <Label font="$x1" layoutX="355.0" layoutY="517.0" text="Credit Bills" />
+    <Label font="$x1" layoutX="301.0" layoutY="588.0" text="Closing balance" />
+    <Label layoutX="485.0" layoutY="560.0" prefWidth="237.0" text="------------------------" />
+    <ImageView id="300px-Crystal_Clear_action_exit.svg" fitHeight="97.0" fitWidth="121.0" layoutX="935.0" layoutY="274.0" onMouseClicked="#processLogout" pickOnBounds="true">
+      <image>
+        <Image url="@../media/300px-Crystal_Clear_action_exit.svg.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="download" fitHeight="57.0" fitWidth="85.0" layoutX="968.0" layoutY="563.0" onMouseClicked="#processDaySessionClose" pickOnBounds="true">
+      <image>
+        <Image url="@../media/download.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label font="$x1" layoutX="924.0" layoutY="511.0" text="Day End Report" />
+    <Label font="$x1" layoutX="953.0" layoutY="230.0" text="Log out" />
+    <Label layoutX="494.0" layoutY="624.0" prefWidth="228.0" text="-----------------------" />
+    <Label font="$x1" layoutX="300.0" layoutY="649.0" text="Cash In Counter" />
+    <TextField id="Tclosingbalance" fx:id="Tcashincounter" effect="$x2" layoutX="522.0" layoutY="649.0" prefHeight="41.0" prefWidth="151.0" />
+    <Label fx:id="LwarningCashCounter" layoutX="701.0" layoutY="653.0" text="" textFill="RED">
+      <font>
+        <Font name="Arial Italic" size="20.0" />
+      </font>
+    </Label>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="317.0" layoutY="170.0" text="Extra Addition" />
+    <TextField fx:id="Textextraaddition" layoutX="520.0" layoutY="166.0" prefWidth="151.0" />
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

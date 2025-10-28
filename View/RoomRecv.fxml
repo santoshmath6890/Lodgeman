@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, text-field, table-view, label-bright, label-header, table-cell, table-row-cell" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.RoomRecvController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="351.0" layoutY="145.0" text="Enter room no">
+      <font>
+        <Font name="Arial" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="inputRoomno" layoutX="535.0" layoutY="141.0" onAction="#processSearch" prefHeight="40.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <Button layoutX="761.0" layoutY="137.0" mnemonicParsing="false" onAction="#processSearch" prefHeight="40.0" prefWidth="116.0" text="Search">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x4">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label font="$x1" layoutX="476.0" layoutY="215.0" text="By:" />
+    <ComboBox fx:id="allRoomcleaners" layoutX="535.0" layoutY="215.0" prefHeight="40.0" prefWidth="204.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label font="$x1" layoutX="335.0" layoutY="300.0" text="Single Bedsheet" />
+    <Button layoutX="535.0" layoutY="297.0" mnemonicParsing="false" onAction="#processSingleBedMinus" prefHeight="40.0" prefWidth="62.0" text="-">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x3">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <TextField fx:id="singleBedQty" effect="$x2" layoutX="608.0" layoutY="293.0" prefHeight="40.0" prefWidth="98.0" />
+    <Button effect="$x3" layoutX="731.0" layoutY="293.0" mnemonicParsing="false" onAction="#processSingleBedAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Label font="$x1" layoutX="323.0" layoutY="354.0" text="Double Bedsheet" />
+    <TextField id="singleBedQty" fx:id="doubleBedQty" effect="$x2" layoutX="608.0" layoutY="347.0" prefHeight="40.0" prefWidth="98.0" />
+    <Button effect="$x3" layoutX="535.0" layoutY="351.0" mnemonicParsing="false" onAction="#processDoubleBedMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <Button effect="$x3" layoutX="534.0" layoutY="409.0" mnemonicParsing="false" onAction="#processPillowMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <Button effect="$x3" layoutX="533.0" layoutY="462.0" mnemonicParsing="false" onAction="#processTowelMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <Button effect="$x3" layoutX="531.0" layoutY="518.0" mnemonicParsing="false" onAction="#processBlanketMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <TextField id="singleBedQty" fx:id="pillowqty" effect="$x2" layoutX="609.0" layoutY="404.0" prefHeight="40.0" prefWidth="98.0" />
+    <TextField id="singleBedQty" fx:id="towelqty" effect="$x2" layoutX="609.0" layoutY="460.0" prefHeight="40.0" prefWidth="98.0" />
+    <TextField id="singleBedQty" fx:id="blanketqty" effect="$x2" layoutX="609.0" layoutY="516.0" prefHeight="40.0" prefWidth="98.0" />
+    <Button effect="$x3" layoutX="731.0" layoutY="347.0" mnemonicParsing="false" onAction="#processDoubleBedAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Button effect="$x3" layoutX="730.0" layoutY="404.0" mnemonicParsing="false" onAction="#processPillowAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Button effect="$x3" layoutX="730.0" layoutY="460.0" mnemonicParsing="false" onAction="#processTowelAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Button effect="$x3" layoutX="730.0" layoutY="516.0" mnemonicParsing="false" onAction="#processBlanketAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Label font="$x1" layoutX="443.0" layoutY="400.0" prefHeight="48.0" text="Pillow" />
+    <Label font="$x1" layoutX="446.0" layoutY="456.0" prefHeight="48.0" text="Towel" />
+    <Label font="$x1" layoutX="427.0" layoutY="512.0" prefHeight="48.0" text="Blanket" />
+    <Button effect="$x4" layoutX="586.0" layoutY="586.0" mnemonicParsing="false" onAction="#processUpdate" prefHeight="40.0" prefWidth="128.0" text="UPDATE" />
+    <Label fx:id="warningreadyroom" layoutX="530.0" layoutY="183.0" text="" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

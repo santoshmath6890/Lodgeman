@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, label-bright, text-field, label-header, table-cell, table-row-cell, table-view" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.LaundryTransactionController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="134.0" layoutY="234.0" text="Received From:" />
+    <TextField fx:id="receivedFrom" layoutX="336.0" layoutY="234.0" prefHeight="36.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x3" />
+      </effect>
+    </TextField>
+    <Label layoutX="163.0" layoutY="307.0" text="Received To:" />
+    <TextField fx:id="receivedBy" effect="$x3" layoutX="336.0" layoutY="307.0" prefHeight="36.0" prefWidth="200.0" />
+    <Button layoutX="336.0" layoutY="415.0" mnemonicParsing="false" onAction="#processNewTransaction" prefHeight="36.0" prefWidth="200.0" text="New Transaction">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x2">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label layoutX="616.0" layoutY="160.0" text="Select Item" />
+    <ComboBox fx:id="itemslist" layoutX="778.0" layoutY="154.0" prefHeight="36.0" prefWidth="200.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button layoutX="1021.0" layoutY="154.0" mnemonicParsing="false" onAction="#processCheck" prefHeight="38.0" prefWidth="122.0" text="Check">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label layoutX="640.0" layoutY="234.0" text="Received" />
+    <TextField fx:id="transItemRecv" layoutX="778.0" layoutY="232.0" prefHeight="36.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label layoutX="668.0" layoutY="305.0" text="Sent" />
+    <TextField fx:id="transItemSent" layoutX="778.0" layoutY="305.0" prefHeight="36.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Button effect="$x2" layoutX="817.0" layoutY="415.0" mnemonicParsing="false" onAction="#processDone" prefHeight="38.0" prefWidth="122.0" text="Done" />
+    <Button effect="$x2" layoutX="601.0" layoutY="518.0" mnemonicParsing="false" onAction="#processFinishTransaction" prefHeight="75.0" prefWidth="200.00009999999747" text="Finish Transaction" />
+    <Label fx:id="dirtyItems" layoutX="1015.0" layoutY="272.0" text="" textFill="#ff3333">
+      <font>
+        <Font size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="laundryItems" font="$x1" layoutX="1015.0" layoutY="311.0" text="" textFill="#ff3d00" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="-1.0" styleClass="button, column-header" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.AskMoreAdvanceController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="-20.0" AnchorPane.rightAnchor="-20.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="-17.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="-20.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TableView fx:id="tAskAdvanceTable" layoutX="106.0" layoutY="216.0" prefHeight="442.0" prefWidth="989.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="106.0" text="Room No" fx:id="mRoomno" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="232.0" text="Customer Name" fx:id="mCustomerName" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="256.0" text="Checkin Date" fx:id="mCheckinDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="143.0" text="Advance Paid" fx:id="mAdvancePaid" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="123.0" text="Room Rent" fx:id="mRentAmount" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="135.0" text="Difference" fx:id="mDifference" />
+      </columns>
+      <effect>
+        <DropShadow />
+      </effect>
+    </TableView>
+    <Button layoutX="1123.0" layoutY="386.0" mnemonicParsing="false" onAction="#processPrint" prefHeight="56.0" prefWidth="187.0" text="Take Print">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

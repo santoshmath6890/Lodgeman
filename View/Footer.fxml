@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0x000000ff?>
+
+<AnchorPane id="AnchorPane" prefHeight="57.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.FooterController">
+  <children>
+    <HBox prefHeight="57.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Lalit Mahal">
+          <font>
+            <Font name="Century Gothic" size="40.0" />
+          </font>
+        </Text>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@footer.css" />
+  </stylesheets>
+</AnchorPane>

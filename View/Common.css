@@ -1,0 +1,11 @@
+/* 
+    Document   : Common
+    Created on : 30 Aug, 2013, 4:10:59 PM
+    Author     : vijay
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.background
+{
+    -fx-background-color: orangered;        
+}

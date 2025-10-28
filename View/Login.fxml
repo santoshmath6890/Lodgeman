@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="373.0037841796875" styleClass="button, column-header, text-field, table-view, table-row-cell, table-cell, column-header-background, label, label-bright, label-header" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.LoginController">
+  <children>
+    <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="307.0" text="Username" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="36.0">
+      <font>
+        <Font name="Nyala" size="40.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="username" opacity="0.64" prefHeight="66.0" prefWidth="300.0037841796875" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="82.0">
+      <effect>
+        <DropShadow />
+      </effect>
+    </TextField>
+    <Label alignment="CENTER" font="$x1" layoutX="39.0" layoutY="158.0" prefWidth="300.0" text="Password" textFill="WHITE" />
+    <PasswordField fx:id="password" opacity="0.64" prefHeight="66.0" prefWidth="300.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="200.0">
+      <effect>
+        <DropShadow />
+      </effect>
+    </PasswordField>
+    <Label fx:id="wrongInfo" prefWidth="18.0" text="" textFill="#fff1cc" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="294.0">
+      <font>
+        <Font name="Nyala" size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="99.0" layoutY="278.0" prefWidth="200.0" text="Opening balance" textFill="WHITE">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <TextField fx:id="mOpeningBalance" layoutX="40.0" layoutY="327.0" prefHeight="66.0" prefWidth="301.0">
+      <effect>
+        <DropShadow />
+      </effect>
+    </TextField>
+    <Button layoutX="52.0" layoutY="410.0" mnemonicParsing="false" onAction="#processLogin" prefHeight="73.0" prefWidth="125.00009999999747" text="Login">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x2">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Button fx:id="exitButton" effect="$x2" mnemonicParsing="false" onAction="#processExit" prefHeight="73.0" prefWidth="125.0" styleClass="windows7" text="Exit" AnchorPane.leftAnchor="192.0" AnchorPane.topAnchor="403.0" />
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="table-view, table-row-cell, table-cell, label-header, label-bright, label, button, column-header, column-header-background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.DayDetailsController">
+  <children>
+    <AnchorPane prefHeight="79.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="71.0" prefWidth="1300.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="64.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="64.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TabPane layoutX="378.0" layoutY="142.0" prefHeight="361.0" prefWidth="872.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Check - In Received">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <AnchorPane prefHeight="299.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <TableView fx:id="advancetable" prefHeight="431.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <columns>
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="196.0" text="Guest Name" fx:id="guestname" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="153.0" text="Room No" fx:id="roomno" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="222.0" text="Arrival Date" fx:id="arrdate" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="179.0" text="Advance Paid" fx:id="advpaid" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Bill - Received">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TableView fx:id="allBillTable" prefHeight="431.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="71.0" text="Bill No" fx:id="billno" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="Room No" fx:id="mRoomno" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="213.0" text="Customer Name" fx:id="mGuestname" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="176.0" text="Check in Date" fx:id="checkindate" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="178.0" text="Check Out Date" fx:id="checkoutdate" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="122.0" text="Received" fx:id="receive" />
+                  </columns>
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Bill -  Refund">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <AnchorPane prefHeight="299.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <TableView fx:id="allBillTable2" prefHeight="431.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <columns>
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="71.0" text="Bill No" fx:id="nBillno" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="99.0" text="Room No" fx:id="nRoomno" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="212.0" text="Customer Name" fx:id="nGuestname" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="190.0" text="Check In Date" fx:id="nCheckindate" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="191.0" text="Check Out Date" fx:id="nCheckoutdate" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="104.0" text="Refund" fx:id="refund" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Credit Bills">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <AnchorPane prefHeight="299.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <AnchorPane prefHeight="299.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <TableView fx:id="CBallCredittable" prefHeight="431.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="173.0" text="Credit Owner" fx:id="CBcreditowner" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="235.0" text="Guest Name" fx:id="CBguestname" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="121.0" text="Bill No" fx:id="CBbillno" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="186.0" text="Total Amount" fx:id="CBtotalAmount" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="144.0" text="Amount Due" fx:id="CBamountDue" />
+                          </columns>
+                        </TableView>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Expenses">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <AnchorPane prefHeight="299.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <TableView fx:id="EXPTable" prefHeight="431.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <columns>
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="143.0" text="To" fx:id="EXPledger" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="244.0" text="Note" fx:id="EXPnote" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="190.0" text="Date" fx:id="EXPdate" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="151.0" text="By" fx:id="EXPuser" />
+                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="151.0" text="Amount" fx:id="EXAmount" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Other Incomes">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TableView fx:id="RCVTable" prefHeight="431.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="148.0" text="From" fx:id="RCVledger" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="209.0" text="Note" fx:id="RCVnote" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="191.0" text="Date" fx:id="RCVdate" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="165.0" text="From" fx:id="RCVuser" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="139.0" text="Amount" fx:id="RCVAmount" />
+                  </columns>
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="49.0" layoutX="19.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="336.0">
+      <fill>
+        <Color blue="0.250" green="0.250" red="0.250" fx:id="x1" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="49.0" layoutX="19.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="49.0" layoutX="19.0" layoutY="246.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+    <Label layoutX="41.0" layoutY="255.0" text="Bill Receive" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="49.0" layoutX="18.0" layoutY="298.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="49.0" layoutX="18.0" layoutY="350.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+    <Label layoutX="41.0" layoutY="307.0" text="Credit Received" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="49.0" layoutX="19.0" layoutY="402.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+    <Label layoutX="41.0" layoutY="411.0" text="Expense" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="49.0" layoutX="19.0" layoutY="454.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+    <Label layoutX="41.0" layoutY="359.0" text="Receivables" />
+    <Label fx:id="LabelAdvance" layoutX="227.0" layoutY="202.0" text="" />
+    <Label fx:id="LabelRefund" layoutX="227.0" layoutY="467.0" text="" />
+    <Label fx:id="LabelReceive" layoutX="227.0" layoutY="257.0" text="" />
+    <Label fx:id="LabelCreditbillrecvd" layoutX="227.0" layoutY="307.0" text="" />
+    <Label fx:id="LabelExpense" layoutX="227.0" layoutY="411.0" text="" />
+    <Label fx:id="LabelReceivables" layoutX="227.0" layoutY="359.0" text="" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="49.0" layoutX="19.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="336.0">
+      <fill>
+        <Color blue="0.251" green="0.251" red="0.251" fx:id="x2" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="49.0" layoutX="18.0" layoutY="558.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+    <Label layoutX="29.0" layoutY="567.0" text="Closing Balance" />
+    <Label layoutX="41.0" layoutY="515.0" text="Credit Bills" />
+    <Label layoutX="41.0" layoutY="467.0" text="Bill Refund" />
+    <Label layoutX="41.0" layoutY="202.0" text="Advance " />
+    <Label layoutX="23.0" layoutY="151.0" text="Opening Balance" />
+    <Label fx:id="LabelOpeningbalance" layoutX="227.0" layoutY="147.0" text="" />
+    <Label fx:id="LabelClosingbalance" layoutX="227.0" layoutY="567.0" text="" />
+    <Label fx:id="LabelCreditbill" layoutX="227.0" layoutY="512.0" text="" />
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+
+<MenuBar prefHeight="62.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.FileController">
+  <menus>
+    <Menu mnemonicParsing="false" text="Bookings">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuHome" text="Home" fx:id="mihome" />
+        <MenuItem mnemonicParsing="false" onAction="#processLedgerMenuCheckin" text="Check-In" fx:id="micheckin">
+          <accelerator>
+            <KeyCodeCombination alt="UP" code="F1" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+          </accelerator>
+        </MenuItem>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuCheckout" text="Check-Out" fx:id="micheckout">
+          <accelerator>
+            <KeyCodeCombination alt="UP" code="F2" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+          </accelerator>
+        </MenuItem>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuAddExtraBed" text="AddExtraBed" fx:id="miaddextrabed">
+          <accelerator>
+            <KeyCodeCombination alt="UP" code="F3" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+          </accelerator>
+        </MenuItem>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuDepositAdvance" text="DepositAdvance" fx:id="midepositadvance">
+          <accelerator>
+            <KeyCodeCombination alt="UP" code="F4" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+          </accelerator>
+        </MenuItem>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuEditBookings" text="EditBookings" fx:id="mieditbooking">
+          <accelerator>
+            <KeyCodeCombination alt="UP" code="F5" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+          </accelerator>
+        </MenuItem>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuRoomConversion" text="RoomConversion" fx:id="miroomconversion">
+          <accelerator>
+            <KeyCodeCombination alt="UP" code="F6" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+          </accelerator>
+        </MenuItem>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuExit" text="Exit" fx:id="miexit">
+          <accelerator>
+            <KeyCodeCombination alt="UP" code="F12" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+          </accelerator>
+        </MenuItem>
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Customer">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuCustomerSearch" text="CustomerSeach" fx:id="micustomersearch" />
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuGroundFloorCustomerView" text="GroundFloorCustomerView" fx:id="migroundfloorcustomerview" />
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuFirstFloorCustomerView" text="FirstFloorCustomerView" fx:id="mifirstfloorcustomerview" />
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuSecondFloorCustomerView" text="SecondFloorCustomerView" fx:id="misecondfloorcustomerview" />
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuThirdFloorACustomerView" text="ThirdFloor A CustomerView" fx:id="mithirdflooracustomerview" />
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuThirdFloorBCustomerView" text="ThridFloor B CustomerView" fx:id="mithirdfloorbcustomerview" />
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuCustomerSearchRoomWise" text="CustomerSearch Room Wise" fx:id="micustomersearchroomwise" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Payments">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#processCustomerMenuViewPaymentEntry" text="PaymentEntry" fx:id="mipaymententry" />
+        <MenuItem mnemonicParsing="false" onAction="#processBookingMenuViewVewTodaysPayment" text="Vew Todays Payments" fx:id="miviewtodayspayments" />
+        <MenuItem mnemonicParsing="false" onAction="#processLedgerMenuViewCreateNewPayment" text="Create New Payment Account(leadger)" fx:id="micreatenewpayment" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Laundry">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#processLaundryMenuLaundryAction1" text="Action 1" fx:id="milaction1" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="DayLog">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#processLaundryMenuDayLogAction1" text="Action 1" fx:id="midaction1" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Reports">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#processReportsMenuAction1" text="Action 1" fx:id="mireportaction1" />
+      </items>
+    </Menu>
+  </menus>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</MenuBar>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, button, column-header, column-header-background, label" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.CurrentCustomerDetailsController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="back" fitHeight="101.0" fitWidth="103.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TextField fx:id="guestname" layoutX="343.0" layoutY="217.0" prefHeight="48.0" prefWidth="297.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label layoutX="120.0" layoutY="225.0" text="Customer Name">
+      <font>
+        <Font name="Arial" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="167.0" layoutY="295.0" text="Contact No" />
+    <Label font="$x1" layoutX="203.0" layoutY="350.0" text="Address" />
+    <Label font="$x1" layoutX="241.0" layoutY="474.0" text="City" />
+    <Label font="$x1" layoutX="235.0" layoutY="545.0" text="State" />
+    <Label font="$x1" layoutX="137.0" layoutY="595.0" text="Check-in Date" />
+    <TextField fx:id="contactno" layoutX="344.0" layoutY="295.0" prefHeight="38.0" prefWidth="297.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <TextArea fx:id="address" layoutX="343.0" layoutY="350.0" prefHeight="101.0" prefWidth="297.0" wrapText="true">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextArea>
+    <TextField fx:id="city" layoutX="343.0" layoutY="468.0" prefHeight="38.0" prefWidth="297.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <TextField fx:id="state" effect="$x2" layoutX="343.0" layoutY="533.0" prefHeight="38.0" prefWidth="297.0" />
+    <TextField fx:id="checkinDate" effect="$x2" layoutX="343.0" layoutY="595.0" prefHeight="38.0" prefWidth="356.0" />
+    <ImageView fx:id="customerphoto" fitHeight="243.0" fitWidth="324.0" layoutX="720.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="customeridphoto" fitHeight="156.0" fitWidth="208.0" layoutX="730.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

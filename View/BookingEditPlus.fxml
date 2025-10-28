@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, fontStyle, label, label-bright, label-header, table-cell, table-row-cell, table-view, text-field" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.BookingEditPlusController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" layoutX="0.0" layoutY="82.0" pickOnBounds="true">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.00009999999747" layoutX="1266.0" layoutY="89.0" pickOnBounds="true">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="121.0" layoutY="129.0" text="Enter Room No" />
+    <TextField fx:id="mUserRoomno" layoutX="301.0" layoutY="133.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x1" />
+      </effect>
+    </TextField>
+    <Button layoutX="546.0" layoutY="126.0" mnemonicParsing="false" text="Search">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x3">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <TextField layoutX="46.0" layoutY="230.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <TextField effect="$x1" layoutX="46.0" layoutY="305.0" prefWidth="200.0" />
+    <TextField effect="$x2" layoutX="46.0" layoutY="384.0" prefWidth="200.0" />
+    <Label layoutX="46.0" layoutY="202.0" text="Guest Name:" />
+    <Label layoutX="46.0" layoutY="274.0" text="Guest Contact no" />
+    <Label layoutX="46.0" layoutY="350.0" text="Guest ID" />
+    <ComboBox layoutX="433.0" layoutY="231.0" prefHeight="34.0" prefWidth="221.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button effect="$x3" layoutX="434.0" layoutY="316.0" mnemonicParsing="false" text="Change Room" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

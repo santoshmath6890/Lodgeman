@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, text-field, table-view, table-row-cell, table-cell, label-header, column-header, column-header-background, label, label-bright" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.AmenityFixController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" x="97.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="366.0" layoutY="124.0" text="Room No" />
+    <TextField fx:id="inputRoomno" layoutX="497.0" layoutY="117.0" onAction="#processSearch" prefHeight="46.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Button layoutX="737.0" layoutY="121.0" mnemonicParsing="false" onAction="#processSearch" prefHeight="42.0" prefWidth="127.0" text="Search">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label layoutX="497.0" layoutY="208.0" text="Single Bedsheet Qty" />
+    <TextField fx:id="singleBedQty" layoutX="533.0" layoutY="253.0" prefHeight="31.0" prefWidth="127.0">
+      <effect>
+        <InnerShadow fx:id="x1" />
+      </effect>
+    </TextField>
+    <Label layoutX="481.0" layoutY="298.0" text="Double Bedsheet Qty" />
+    <TextField fx:id="doubleBedQty" effect="$x1" layoutX="532.0" layoutY="336.0" prefHeight="31.0" prefWidth="127.0" />
+    <Label layoutX="549.0" layoutY="373.0" text="Blanket" />
+    <TextField fx:id="blanketqty" effect="$x1" layoutX="532.0" layoutY="408.0" prefHeight="30.999900000002526" prefWidth="127.0" />
+    <Label layoutX="554.0" layoutY="440.0" text="Pillow" />
+    <TextField fx:id="pillowqty" effect="$x1" layoutX="533.0" layoutY="472.0" prefHeight="31.0" prefWidth="127.0" />
+    <Label layoutX="554.0" layoutY="503.0" text="Towel" />
+    <TextField fx:id="towelqty" effect="$x1" layoutX="536.0" layoutY="536.0" prefHeight="31.0" prefWidth="127.0" />
+    <Button layoutX="534.0" layoutY="600.0" mnemonicParsing="false" onAction="#processUpdate" prefHeight="46.0" prefWidth="148.0" text="Update">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Button layoutX="458.0" layoutY="253.0" mnemonicParsing="false" onAction="#processMinusSingleBed" prefHeight="31.0" prefWidth="36.0" text="-">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x2">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Button effect="$x2" layoutX="694.0" layoutY="253.0" mnemonicParsing="false" onAction="#processAddSingleBed" prefHeight="31.0" prefWidth="36.0" text="+" />
+    <Button effect="$x2" layoutX="458.0" layoutY="341.0" mnemonicParsing="false" onAction="#processMinusDoubleBed" text="-" />
+    <Button effect="$x2" layoutX="693.0" layoutY="336.0" mnemonicParsing="false" onAction="#processAddDoubleBed" text="+" />
+    <Button effect="$x2" layoutX="458.0" layoutY="402.0" mnemonicParsing="false" onAction="#processMinusBlanket" text="-" />
+    <Button effect="$x2" layoutX="694.0" layoutY="401.0" mnemonicParsing="false" onAction="#processAddBlanket" text="+" />
+    <Button effect="$x2" layoutX="458.0" layoutY="465.0" mnemonicParsing="false" onAction="#processMinusPillow" text="-" />
+    <Button effect="$x2" layoutX="693.0" layoutY="466.0" mnemonicParsing="false" onAction="#processAddPillow" text="+" />
+    <Button effect="$x2" layoutX="458.0" layoutY="535.0" mnemonicParsing="false" onAction="#processMinusTowel" text="-" />
+    <Button effect="$x2" layoutX="693.0" layoutY="533.0" mnemonicParsing="false" onAction="#prcessAddTowel" text="+" />
+    <ComboBox fx:id="singleOption" layoutX="356.0" layoutY="253.0" prefHeight="31.0">
+      <effect>
+        <DropShadow fx:id="x3" />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="doubleOption" effect="$x3" layoutX="355.0" layoutY="336.0" prefHeight="31.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="blanketOption" effect="$x3" layoutX="355.0" layoutY="405.0" prefHeight="31.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="pillowOption" effect="$x3" layoutX="355.0" layoutY="466.0" prefHeight="31.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="towelOption" effect="$x3" layoutX="359.0" layoutY="536.0" prefHeight="31.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label fx:id="warningreadyroom" layoutX="497.0" layoutY="170.0" text="" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

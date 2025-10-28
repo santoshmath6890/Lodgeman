@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xff7a00ff?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="1300.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.HomeController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1068.0" AnchorPane.bottomAnchor="482.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1068.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <Label fx:id="currentUser" layoutX="1055.0" layoutY="98.0" text="" textFill="WHITE">
+          <font>
+            <Font name="Arial" size="25.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <ImageView id="Booking (3)" layoutX="144.0" layoutY="125.0" pickOnBounds="true">
+      <image>
+        <Image url="@../media/Booking%20(3).png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="Booking" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processCheckin" pickOnBounds="true" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="111.0">
+      <image>
+        <Image url="@../media/New%20folder/Booking.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="reservatioin" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processViewBooking" pickOnBounds="true" AnchorPane.leftAnchor="454.0" AnchorPane.topAnchor="111.0">
+      <image>
+        <Image url="@../media/New%20folder/reservatioin.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="checkout" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processCheckout" pickOnBounds="true" AnchorPane.leftAnchor="756.0" AnchorPane.topAnchor="111.0">
+      <image>
+        <Image url="@../media/New%20folder/checkout.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="food order" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processAddBookingAddon" pickOnBounds="true" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="274.0">
+      <image>
+        <Image url="@../media/New%20folder/food%20order.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="remainders" fitHeight="140.0" fitWidth="269.0" pickOnBounds="true" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="441.0">
+      <image>
+        <Image url="@../media/New%20folder/remainders.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="Product Orders" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processAdvanceAdd" pickOnBounds="true" AnchorPane.leftAnchor="454.0" AnchorPane.topAnchor="274.0">
+      <image>
+        <Image url="@../media/New%20folder/Product%20Orders.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="Laundry Service" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processBookingRoomChange" pickOnBounds="true" AnchorPane.leftAnchor="756.0" AnchorPane.topAnchor="274.0">
+      <image>
+        <Image url="@../media/New%20folder/Laundry%20Service.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="others" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processAccounts" pickOnBounds="true" AnchorPane.leftAnchor="454.0" AnchorPane.topAnchor="441.0">
+      <image>
+        <Image url="@../media/New%20folder/others.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="config" fitHeight="140.0" fitWidth="269.0" onMouseClicked="#processConfig" pickOnBounds="true" AnchorPane.leftAnchor="756.0" AnchorPane.topAnchor="441.0">
+      <image>
+        <Image url="@../media/New%20folder/config.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="300px-Crystal_Clear_action_exit.svg" fitHeight="97.0" fitWidth="121.0" layoutX="1137.0" layoutY="154.0" onMouseClicked="#processLogout" pickOnBounds="true">
+      <image>
+        <Image url="@../media/300px-Crystal_Clear_action_exit.svg.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@Common.css" />
+  </stylesheets>
+</AnchorPane>

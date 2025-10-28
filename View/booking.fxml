@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import javafx.scene.text.*?>
+<?import jfxtras.labs.scene.control.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0000999999975" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, label-bright, label-header, table-cell, table-row-cell, table-view, text-field" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.BookingController">
+  <children>
+    <ImageView id="home" fitHeight="110.0" fitWidth="110.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="-4.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="90.0" fitWidth="110.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <AnchorPane layoutX="1.0" layoutY="181.0" prefHeight="455.0" prefWidth="1068.0">
+      <children>
+        <GridPane fx:id="roomGrid" prefHeight="455.0" prefWidth="1068.0" AnchorPane.bottomAnchor="-20.5" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="-24.0" AnchorPane.topAnchor="20.5">
+          <children>
+            <Rectangle fx:id="rb1" arcHeight="5.0" arcWidth="5.0" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <fill>
+                <Color blue="0.000" green="1.000" red="0.078" fx:id="x3" />
+              </fill>
+            </Rectangle>
+            <Rectangle fx:id="rb2" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb9" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Rectangle fx:id="rb11" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Rectangle fx:id="rb10" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Rectangle fx:id="rb17" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb18" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb19" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb25" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb26" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb27" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb33" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb34" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb35" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb41" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb42" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb43" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb49" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Rectangle fx:id="rb50" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Rectangle fx:id="rb57" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <Rectangle fx:id="rb58" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Rectangle fx:id="rb59" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b9" alignment="CENTER" contentDisplay="LEFT" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 109" GridPane.columnIndex="0" GridPane.rowIndex="1">
+              <font>
+                <Font size="15.0" fx:id="x2" />
+              </font>
+            </ToggleButton>
+            <ToggleButton fx:id="b25" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 125" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b17" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 117" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b33" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 133" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b41" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 141" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="b49" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 149" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b57" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 157" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b10" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 110" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="b2" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 102" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <ToggleButton fx:id="b18" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 118" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b26" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 126" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b34" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 134" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b42" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 142" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="b11" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 111" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="b19" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 119" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b27" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 127" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b35" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 135" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b43" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 143" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="b50" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 150" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b58" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 158" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b59" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 159" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b1" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 101" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb3" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <ToggleButton fx:id="b3" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 103" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb4" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb12" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Rectangle fx:id="rb20" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb28" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb36" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb44" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb52" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Rectangle fx:id="rb60" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Rectangle fx:id="rb13" arcHeight="5.0" arcWidth="5.0" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+              <fill>
+                <Color blue="0.000" green="1.000" red="0.080" fx:id="x4" />
+              </fill>
+            </Rectangle>
+            <Rectangle fx:id="rb29" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb45" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb64" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Rectangle fx:id="rb56" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Rectangle fx:id="rb48" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb40" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb61" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Rectangle fx:id="rb53" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Rectangle fx:id="rb32" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb24" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb16" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Rectangle fx:id="rb8" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb37" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb5" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb21" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb6" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb22" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb31" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb7" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+            <Rectangle fx:id="rb14" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Rectangle fx:id="rb15" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Rectangle fx:id="rb23" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rb30" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Rectangle fx:id="rb38" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb39" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Rectangle fx:id="rb46" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb47" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb54" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Rectangle fx:id="rb55" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Rectangle fx:id="rb62" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Rectangle fx:id="rb63" arcHeight="5.0" arcWidth="5.0" fill="$x4" height="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b5" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 105" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <ToggleButton fx:id="b6" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 106" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <ToggleButton fx:id="b7" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="95.9998779296875" text="Room 107" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+            <ToggleButton fx:id="b8" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 108" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+            <ToggleButton fx:id="b13" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 113" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="b14" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 114" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="b15" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 115" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="b16" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 116" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="b21" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 121" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b22" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 122" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b23" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 123" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b24" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 124" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b29" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 129" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b30" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 130" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b31" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 131" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b32" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 132" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b4" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 104" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ToggleButton fx:id="b12" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 112" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="b20" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 120" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="b28" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 128" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="b36" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 136" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b44" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 144" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="b52" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 152" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b53" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 153" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b61" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 161" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b54" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 154" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b62" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 162" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b55" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 155" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b63" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 163" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b56" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 156" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b64" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 164" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b60" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 160" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="b37" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 137" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b38" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 138" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b39" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 139" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b40" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 140" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="b45" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 145" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="b46" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 146" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="b47" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 147" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="b48" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 148" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Rectangle fx:id="rb66" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b66" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 166" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Rectangle fx:id="rb65" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b65" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 165" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <Rectangle fx:id="rb67" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b67" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 167" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Rectangle fx:id="rb68" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b68" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 168" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Rectangle fx:id="rb69" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b69" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 169" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Rectangle fx:id="rb70" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" visible="false" width="133.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b70" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 170" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Rectangle fx:id="rb71" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" visible="false" width="133.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b71" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 171" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Rectangle fx:id="rb72" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" visible="false" width="133.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="b72" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 172" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Rectangle id="rb35" fx:id="rb51" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="55.96875" stroke="BLACK" strokeType="INSIDE" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="b51" alignment="CENTER" contentDisplay="LEFT" font="$x2" mnemonicParsing="false" onAction="#toggleClick" prefHeight="31.0" prefWidth="96.0" text="Room 151" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+    </AnchorPane>
+    <Button layoutX="628.0" layoutY="126.0" mnemonicParsing="false" onAction="#processCheckRooms" prefHeight="50.0" text="Check Rooms">
+      <font>
+        <Font size="20.0" fx:id="x5" />
+      </font>
+    </Button>
+    <jfxtras.labs.scene.control.CalendarTimeTextField fx:id="time" layoutX="352.0" layoutY="131.0" prefHeight="50.0" prefWidth="200.0" />
+    <Label font="$x5" layoutX="352.0" layoutY="96.0" text="At:" />
+    
+   
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="1101.0" layoutY="452.0" prefWidth="150.0" text="---------------" />
+    <Label layoutX="1108.0" layoutY="220.0" text="Double :" />
+    <Label layoutX="1109.0" layoutY="284.0" text="Single :" />
+    <Label fx:id="doublevacantroom" layoutX="1205.0" layoutY="220.0" text="" />
+    <Label fx:id="singlevacantroom" layoutX="1200.0" layoutY="282.0" text="" />
+    
+     <Label layoutX="1108.0" layoutY="320.0" text="Ac Double :" />
+    <Label layoutX="1109.0" layoutY="384.0" text="Ac Single :" />
+     <Label fx:id="acdoublevacantroom" layoutX="1240.0" layoutY="320.0" text="" />
+    <Label fx:id="acsinglevacantroom" layoutX="1240.0" layoutY="382.0" text="" />
+    
+    <Button fx:id="proceed" layoutX="535.0" layoutY="674.0" mnemonicParsing="false" onAction="#clickProced" prefHeight="50.0" prefWidth="150.0" text="Proceed">
+      <font>
+        <Font size="22.0" fx:id="x1" />
+      </font>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

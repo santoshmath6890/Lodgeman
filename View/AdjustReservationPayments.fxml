@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, text-field, table-row-cell, table-cell, column-header-background, label, label-bright, label-header, table-view" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.AdjustReservationPaymentsController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="308.0" layoutY="165.0" text="Enter Room No">
+      <font>
+        <Font name="Arial" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="InputRoomno" layoutX="536.0" layoutY="165.0" onAction="#processSearch" prefHeight="31.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <Button layoutX="777.0" layoutY="163.0" mnemonicParsing="false" onAction="#processSearch" prefHeight="38.0" prefWidth="115.0" text="Search">
+      <effect>
+        <DropShadow fx:id="x3">
+          <input>
+            <Bloom threshold="1.0" />
+          </input>
+        </DropShadow>
+      </effect>
+    </Button>
+    <Label font="$x1" layoutX="308.0" layoutY="235.0" text="Checkin - Date" />
+    <TextField fx:id="InputCheckinDate" effect="$x2" layoutX="536.0" layoutY="233.0" prefHeight="31.0" prefWidth="280.0" />
+    <Label font="$x1" layoutX="393.0" layoutY="282.0" text="Name" />
+    <TextField fx:id="InputName" effect="$x2" layoutX="536.0" layoutY="283.0" prefHeight="31.0" prefWidth="200.0" />
+    <Label font="$x1" layoutX="344.0" layoutY="340.0" text="Contact No" />
+    <TextField fx:id="InputContactno" effect="$x2" layoutX="536.0" layoutY="335.0" prefHeight="31.0" prefWidth="200.0" />
+    <Label font="$x1" text="Search Receipt No" AnchorPane.bottomAnchor="254.0" AnchorPane.rightAnchor="817.0" />
+    <TextField fx:id="InputReceiptNo" effect="$x2" layoutX="536.0" layoutY="424.0" onAction="#prcessFindReceipt" prefHeight="31.0" prefWidth="200.0" />
+    <Button effect="$x3" layoutX="777.0" layoutY="420.0" mnemonicParsing="false" onAction="#prcessFindReceipt" prefHeight="38.0" prefWidth="166.0" text="Find Receipt" />
+    <Label font="$x1" layoutX="385.0" layoutY="467.0" text="Paid By" />
+    <TextField fx:id="InputPaidBy" effect="$x2" layoutX="536.0" layoutY="467.0" prefHeight="31.0" prefWidth="200.0" />
+    <Label font="$x1" layoutX="328.0" layoutY="512.0" text="Amount Paid" />
+    <TextField fx:id="InputAmountPaid" effect="$x2" layoutX="536.0" layoutY="512.0" prefHeight="31.0" prefWidth="200.0" />
+    <Label font="$x1" layoutX="283.0" layoutY="559.0" text="Payment On Date" />
+    <TextField fx:id="InputPaymentByDate" effect="$x2" layoutX="536.0" layoutY="560.0" prefHeight="31.0" prefWidth="280.0" />
+    <Button layoutX="546.0" layoutY="621.0" mnemonicParsing="false" onAction="#processAddPayments" prefHeight="49.0" prefWidth="190.0" text="Add Payment">
+      <effect>
+        <DropShadow />
+      </effect>
+    </Button>
+    <Label fx:id="InputRemark" layoutX="462.0" layoutY="383.0" text="" textFill="RED">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

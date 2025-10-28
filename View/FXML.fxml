@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import lodgeman.lalitman.controller.related.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, column-header, column-header-background, label, label-bright, label-header, table-cell, table-row-cell, table-view" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.FXMLController">
+  <AutoFillTextBox fx:id="autoFill" layoutX="284.0" layoutY="137.0" prefHeight="58.0" prefWidth="461.0" styleClass="autofill-text">
+    <stylesheets>
+      <URL value="@main_1.css" />
+    </stylesheets>
+  </AutoFillTextBox>
+  <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <children>
+      <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+  </AnchorPane>
+  <Button fx:id="ButtonGetDetails" layoutX="786.0" layoutY="137.0" mnemonicParsing="false" onAction="#processSearch" prefHeight="58.0" prefWidth="150.0" text="Get Details">
+    <effect>
+      <DropShadow>
+        <input>
+          <Bloom threshold="1.0" />
+        </input>
+      </DropShadow>
+    </effect>
+  </Button>
+  <Label fx:id="LabelRoomNo" layoutX="226.0" layoutY="236.0" text="Room No" />
+  <TextField fx:id="guestRoomno" layoutX="226.0" layoutY="273.0" prefWidth="200.0">
+    <effect>
+      <InnerShadow fx:id="x1" />
+    </effect>
+  </TextField>
+  <Label fx:id="LabelFromDate" layoutX="226.0" layoutY="310.0" text="From Date:" />
+  <TextField fx:id="guestBookingFromDate" effect="$x1" layoutX="226.0" layoutY="345.0" prefWidth="326.0" />
+  <Label fx:id="LabelToDate" layoutX="227.0" layoutY="378.0" text="To Date:" />
+  <TextField fx:id="guestBookingToDate" effect="$x1" layoutX="226.0" layoutY="418.0" prefWidth="326.0" />
+  <Label fx:id="LabelCustomerId" layoutX="227.0" layoutY="450.0" text="Customer ID:" />
+  <TextField fx:id="guestCustomerID" effect="$x1" layoutX="226.0" layoutY="492.0" prefWidth="200.0" />
+  <ImageView fx:id="guestImage" fitHeight="197.25" fitWidth="263.0" layoutX="1094.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+  <Label fx:id="LabelGuestName" layoutX="633.0" layoutY="237.0" text="Guest Name" />
+  <TextField fx:id="guestName" layoutX="629.0" layoutY="275.0" prefWidth="200.0">
+    <effect>
+      <InnerShadow fx:id="x2" />
+    </effect>
+  </TextField>
+  <Label fx:id="LabelContactNo" layoutX="640.0" layoutY="312.0" text="Contact No.:" />
+  <TextField fx:id="guestContactNo" effect="$x2" layoutX="633.0" layoutY="347.0" prefWidth="200.0" />
+  <Label fx:id="LabelAddress" layoutX="639.0" layoutY="384.0" text="Address:" />
+  <TextArea fx:id="guestAddress" layoutX="629.0" layoutY="420.0" prefHeight="72.0" prefWidth="352.0" wrapText="true">
+    <effect>
+      <InnerShadow />
+    </effect>
+  </TextArea>
+  <Label fx:id="LabelCity" layoutX="640.0" layoutY="523.0" text="City" />
+  <TextField fx:id="guestCity" layoutX="633.0" layoutY="563.0" prefWidth="177.0">
+    <effect>
+      <InnerShadow fx:id="x3" />
+    </effect>
+  </TextField>
+  <Label fx:id="LabelState" layoutX="865.0" layoutY="523.0" text="State" />
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+  <TextField fx:id="guestState" effect="$x3" layoutX="865.0" layoutY="563.0" prefWidth="177.0" />
+  <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="82.0">
+    <image>
+      <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+    </image>
+  </ImageView>
+  <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+    <image>
+      <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+    </image>
+  </ImageView>
+  <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+    <image>
+      <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+    </image>
+  </ImageView>
+</AnchorPane>

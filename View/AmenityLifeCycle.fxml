@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, text-field, table-view, table-row-cell, table-cell, label-header, column-header, column-header-background, label, label-bright" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.AmenityLifeCycleController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" layoutX="0.0" layoutY="82.0" onMouseClicked="#processHome" pickOnBounds="true">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ComboBox fx:id="allItems" layoutX="453.0" layoutY="146.0" onAction="#show" prefHeight="48.0" prefWidth="243.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button layoutX="822.0" layoutY="146.0" mnemonicParsing="false" onAction="#show" prefHeight="48.0" prefWidth="100.0" text="Show">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x2">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label layoutX="572.0" layoutY="226.0" text="In use" />
+    <TextField fx:id="iteminuse" layoutX="559.0" layoutY="262.0" prefHeight="48.0" prefWidth="91.0">
+      <effect>
+        <InnerShadow fx:id="x1" />
+      </effect>
+    </TextField>
+    <Button effect="$x2" layoutX="664.0" layoutY="262.0" mnemonicParsing="false" onAction="#processRemoveInuse" prefHeight="48.0" prefWidth="84.0" text="+" />
+    <Label layoutX="810.0" layoutY="294.0" text="Dirty" />
+    <TextField fx:id="itemdirty" effect="$x1" layoutX="791.0" layoutY="326.0" prefHeight="48.0" prefWidth="91.0" />
+    <Button effect="$x2" layoutX="791.0" layoutY="387.0" mnemonicParsing="false" onAction="#processRemoveInDirty" prefHeight="37.0" prefWidth="91.0" text="+" />
+    <Label layoutX="632.0" layoutY="438.0" text="In Laundry" />
+    <TextField fx:id="iteminlaundry" effect="$x1" layoutX="650.0" layoutY="472.0" prefHeight="48.0" prefWidth="91.0" />
+    <Button effect="$x2" layoutX="539.0" layoutY="472.0" mnemonicParsing="false" onAction="#processRemoveInLaundry" prefHeight="48.0" prefWidth="84.0" text="+" />
+    <Label layoutX="364.0" layoutY="331.0" text="Store" />
+    <TextField fx:id="iteminstore" effect="$x1" layoutX="347.0" layoutY="363.0" prefHeight="48.0" prefWidth="91.0" />
+    <Button effect="$x2" layoutX="347.0" layoutY="293.0" mnemonicParsing="false" onAction="#processRemoveInStore" prefHeight="37.0" prefWidth="91.0" text="-" />
+    <Button layoutX="995.0" layoutY="146.0" mnemonicParsing="false" onAction="#processPrint" prefHeight="48.0" prefWidth="100.0" text="Print">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

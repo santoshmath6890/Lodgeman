@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, button, column-header, column-header-background, label" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.RoomReadyController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="283.0" layoutY="153.0" text="Enter room no">
+      <font>
+        <Font name="Arial" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="inputRoomno" layoutX="472.0" layoutY="153.0" onAction="#processSearch" prefHeight="40.0" prefWidth="203.9998779296875">
+      <effect>
+        <InnerShadow fx:id="x5" />
+      </effect>
+    </TextField>
+    <Button layoutX="734.0" layoutY="149.0" mnemonicParsing="false" onAction="#processSearch" prefHeight="40.0" prefWidth="128.0" text="Search">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x4">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <TextField fx:id="singleBedQty" effect="$x5" layoutX="513.0" layoutY="302.0" prefHeight="40.0" prefWidth="98.0" />
+    <TextField fx:id="doubleBedQty" effect="$x5" layoutX="513.0" layoutY="366.0" prefHeight="40.0" prefWidth="98.0" />
+    <TextField fx:id="pillowqty" effect="$x5" layoutX="513.0" layoutY="425.0" prefHeight="40.0" prefWidth="98.0" />
+    <TextField fx:id="blanketqty" effect="$x5" layoutX="515.0" layoutY="483.0" prefHeight="40.0" prefWidth="98.0" />
+    <TextField fx:id="towelqty" effect="$x5" layoutX="515.0" layoutY="544.0" prefHeight="40.0" prefWidth="98.0" />
+    <Button effect="$x4" layoutX="430.0" layoutY="301.0" mnemonicParsing="false" onAction="#processSingleBedMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <Button effect="$x4" layoutX="634.0" layoutY="301.0" mnemonicParsing="false" onAction="#processSingleBedAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Button effect="$x4" layoutX="634.0" layoutY="366.0" mnemonicParsing="false" onAction="#processDoubleBedAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Button effect="$x4" layoutX="430.0" layoutY="366.0" mnemonicParsing="false" onAction="#processDoubleBedMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <Button effect="$x4" layoutX="634.0" layoutY="425.0" mnemonicParsing="false" onAction="#processPillowAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Button effect="$x4" layoutX="429.0" layoutY="425.0" mnemonicParsing="false" onAction="#processPillowMinus" prefHeight="40.0" prefWidth="62.000099999997474" text="-" />
+    <Button effect="$x4" layoutX="429.0" layoutY="483.0" mnemonicParsing="false" onAction="#processBlanketMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <Button effect="$x4" layoutX="429.0" layoutY="544.0" mnemonicParsing="false" onAction="#processTowelMinus" prefHeight="40.0" prefWidth="62.0" text="-" />
+    <Button effect="$x4" layoutX="634.0" layoutY="483.0" mnemonicParsing="false" onAction="#processBlanketAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Button effect="$x4" layoutX="634.0" layoutY="544.0" mnemonicParsing="false" onAction="#processTowelAdd" prefHeight="40.0" prefWidth="62.0" text="+" />
+    <Label font="$x1" layoutX="213.0" layoutY="309.0" text="Single Bedsheet" />
+    <Label font="$x1" layoutX="201.0" layoutY="374.0" text="Double Bedsheet" />
+    <Label font="$x1" layoutX="321.0" layoutY="433.0" text="Pillow" />
+    <Label font="$x1" layoutX="305.0" layoutY="485.0" text="Blanket" />
+    <Label font="$x1" layoutX="326.0" layoutY="552.0" text="Towel" />
+    <Label id="singleinstore" layoutX="747.0" layoutY="308.0" prefHeight="23.0" text="In Store">
+      <font>
+        <Font name="Arial" size="15.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label font="$x2" layoutX="747.0" layoutY="432.0" prefHeight="23.0" text="In Store" />
+    <Label font="$x2" layoutX="747.0" layoutY="488.0" prefHeight="23.0" text="In Store" />
+    <Label font="$x2" layoutX="747.0" layoutY="549.0" prefHeight="23.0" text="In Store" />
+    <Label font="$x2" layoutX="747.0" layoutY="368.0" prefHeight="23.0" text="In Store" />
+    <Button effect="$x4" layoutX="499.0" layoutY="624.0" mnemonicParsing="false" onAction="#processUpdate" prefHeight="40.0" prefWidth="128.0" text="UPDATE" />
+    <ComboBox fx:id="allRoomcleaners" layoutX="472.0" layoutY="229.0" prefHeight="40.0" prefWidth="204.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label font="$x1" layoutX="360.0" layoutY="233.0" text="By:" />
+    <Label fx:id="warningreadyroom" layoutX="516.0" layoutY="199.0" text="" textFill="RED">
+      <font>
+        <Font name="Arial Italic" size="18.0" />
+      </font>
+    </Label>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label fx:id="singleinstore" layoutX="850.0" layoutY="309.0" text="" />
+    <Label fx:id="doubleinstore" layoutX="850.0" layoutY="361.0" text="" />
+    <Label fx:id="pillowinstore" layoutX="850.0" layoutY="429.0" text="" />
+    <Label fx:id="blanketinstore" layoutX="850.0" layoutY="486.0" text="" />
+    <Label fx:id="towelinstore" layoutX="850.0" layoutY="539.0" text="" />
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

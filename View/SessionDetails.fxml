@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, button, column-header, column-header-background, label" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.SessionDetailsController">
+  <children>
+    <AnchorPane prefHeight="85.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="85.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="91.0" fitWidth="97.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="85.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="91.0" fitWidth="97.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <TableView fx:id="TableSessionDetails" layoutX="54.0" layoutY="198.0" prefHeight="348.0" prefWidth="1218.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="135.0" text="User" fx:id="user" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="184.0" text="From" fx:id="from" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="179.0" text="To" fx:id="to" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="174.0" text="Opening Balance" fx:id="openingbalance" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="162.0" text="Closing Balance" fx:id="closingbalance" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="161.0" text="Cash in Counter" fx:id="cashincounter" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="105.0" text="Difference" fx:id="difference" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Action" fx:id="action" />
+      </columns>
+    </TableView>
+    <jfxtras.labs.scene.control.CalendarTextField fx:id="TextFielduserDate" layoutX="197.0" layoutY="119.0" prefWidth="200.0" />
+    <Button layoutX="481.0" layoutY="119.0" mnemonicParsing="false" onAction="#processGetSessions" prefWidth="169.0" text="Get Sessions" />
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

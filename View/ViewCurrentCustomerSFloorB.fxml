@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1400.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, button, column-header, column-header-background, label" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.ViewCurrentCustomerSFloorBController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="82.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="33.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label layoutX="84.0" layoutY="179.0" text="319" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <ImageView id="image101" fx:id="image319" fitHeight="115.0" fitWidth="136.0" layoutX="33.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text319" layoutX="33.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <Button layoutX="33.0" layoutY="393.0" mnemonicParsing="false" onAction="#processGetDetailsRoom319" prefHeight="30.0" text="Get Details">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x3">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="181.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="232.0" layoutY="179.0" text="320" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image320" fitHeight="115.0" fitWidth="136.0" layoutX="181.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text320" effect="$x2" layoutX="181.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="181.0" layoutY="395.0" mnemonicParsing="false" onAction="#processGetDetailsRoom320" prefHeight="30.0" text="Get Details" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="330.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="381.0" layoutY="179.0" text="321" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image321" fitHeight="115.0" fitWidth="136.0" layoutX="330.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text321" effect="$x2" layoutX="330.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="330.0" layoutY="395.0" mnemonicParsing="false" onAction="#processGetDetailsRoom321" prefHeight="30.0" text="Get Details" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="473.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="524.0" layoutY="179.0" text="322" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image322" fitHeight="115.0" fitWidth="136.0" layoutX="473.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text322" effect="$x2" layoutX="473.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="473.0" layoutY="393.0" mnemonicParsing="false" onAction="#processGetDetailsRoom322" prefHeight="30.0" text="Get Details" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="620.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="671.0" layoutY="179.0" text="323" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image323" fitHeight="115.0" fitWidth="136.0" layoutX="620.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text323" effect="$x2" layoutX="620.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="620.0" layoutY="395.0" mnemonicParsing="false" onAction="#processGetDetailsRoom323" prefHeight="30.0" text="Get Details" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="767.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="818.0" layoutY="179.0" text="324" textFill="WHITE" />
+    <TextField id="text101" fx:id="text324" effect="$x2" layoutX="767.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="772.0" layoutY="396.0" mnemonicParsing="false" onAction="#processGetDetailsRoom324" prefHeight="30.0" text="Get Details" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="910.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="968.0" layoutY="179.0" text="325" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image325" fitHeight="115.0" fitWidth="136.0" layoutX="910.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="image101" fx:id="image324" fitHeight="115.0" fitWidth="136.0" layoutX="767.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text325" effect="$x2" layoutX="910.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="915.0" layoutY="394.0" mnemonicParsing="false" onAction="#processGetDetailsRoom325" prefHeight="30.0" text="Get Details" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="1053.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="1104.0" layoutY="179.0" text="326" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image326" fitHeight="115.0" fitWidth="136.0" layoutX="1053.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="1205.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="1256.0" layoutY="179.0" text="327" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image327" fitHeight="115.0" fitWidth="136.0" layoutX="1205.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text326" effect="$x2" layoutX="1053.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="1054.0" layoutY="394.0" mnemonicParsing="false" onAction="#processGetDetailsRoom326" prefHeight="30.0" text="Get Details" />
+    <TextField id="text101" fx:id="text327" effect="$x2" layoutX="1205.0" layoutY="358.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x3" layoutX="1206.0" layoutY="394.0" mnemonicParsing="false" onAction="#processGetDetailsRoom327" prefHeight="30.0" text="Get Details" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="33.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <TextField id="text101" fx:id="text328" effect="$x2" layoutX="33.0" layoutY="612.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button layoutX="33.0" layoutY="650.0" mnemonicParsing="false" onAction="#processGetDetailsRoom328" prefHeight="30.0" text="Get Details">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x4">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Label font="$x1" layoutX="84.0" layoutY="433.0" text="328" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image328" fitHeight="115.0" fitWidth="136.0" layoutX="33.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="181.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="232.0" layoutY="433.0" text="329" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image329" fitHeight="115.0" fitWidth="136.0" layoutX="181.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="330.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="381.0" layoutY="433.0" text="330" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image330" fitHeight="115.0" fitWidth="136.0" layoutX="330.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="473.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="524.0" layoutY="433.0" text="331" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image331" fitHeight="115.0" fitWidth="136.0" layoutX="473.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="620.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="671.0" layoutY="433.0" text="332" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image332" fitHeight="115.0" fitWidth="136.0" layoutX="620.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="767.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <Label font="$x1" layoutX="801.0" layoutY="433.0" text="Krishna" textFill="WHITE" />
+    <ImageView id="image101" fitHeight="115.0" fitWidth="136.0" layoutX="767.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="171.0" layoutX="910.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+    <ImageView id="image101" fx:id="image1111" fitHeight="115.0" fitWidth="136.0" layoutX="767.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <Label font="$x1" layoutX="950.0" layoutY="433.0" text="Kaveri" textFill="WHITE" />
+    <ImageView id="image101" fx:id="image2222" fitHeight="115.0" fitWidth="136.0" layoutX="910.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="image101" fx:id="image318" fitHeight="115.0" fitWidth="136.0" layoutX="1205.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+    <TextField id="text101" fx:id="text329" effect="$x2" layoutX="181.0" layoutY="612.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x4" layoutX="181.0" layoutY="650.0" mnemonicParsing="false" onAction="#processGetDetailsRoom329" prefHeight="30.0" text="Get Details" />
+    <TextField id="text101" fx:id="text330" effect="$x2" layoutX="330.0" layoutY="612.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x4" layoutX="329.0" layoutY="649.0" mnemonicParsing="false" onAction="#processGetDetailsRoom330" prefHeight="30.0" text="Get Details" />
+    <TextField id="text101" fx:id="text331" effect="$x2" layoutX="473.0" layoutY="612.0" prefHeight="30.0" prefWidth="136.0" />
+    <TextField id="text101" fx:id="text332" effect="$x2" layoutX="620.0" layoutY="612.0" prefHeight="30.0" prefWidth="136.0" />
+    <TextField id="text101" fx:id="text1111" effect="$x2" layoutX="767.0" layoutY="612.0" prefHeight="30.0" prefWidth="136.0" />
+    <TextField id="text101" fx:id="text2222" effect="$x2" layoutX="910.0" layoutY="612.0" prefHeight="30.0" prefWidth="136.0" />
+    <Button effect="$x4" layoutX="477.0" layoutY="649.0" mnemonicParsing="false" onAction="#processGetDetailsRoom331" prefHeight="30.0" text="Get Details" />
+    <Button effect="$x4" layoutX="620.0" layoutY="649.0" mnemonicParsing="false" onAction="#processGetDetailsRoom332" prefHeight="30.0" text="Get Details" />
+    <Button layoutX="771.0" layoutY="650.0" mnemonicParsing="false" onAction="#processGetDetailsRoom1111" prefHeight="30.0" text="Get Details" />
+    <Button layoutX="910.0" layoutY="650.0" mnemonicParsing="false" onAction="#processGetDetailsRoom2222" prefHeight="30.0" text="Get Details" />
+    <Button effect="$x3" layoutX="245.0" layoutY="109.0" mnemonicParsing="false" onAction="#processGroundFloor" prefHeight="48.0" prefWidth="159.0" text="1XX" />
+    <Button effect="$x3" layoutX="438.0" layoutY="109.0" mnemonicParsing="false" onAction="#processFirstFloor" prefHeight="48.0" prefWidth="159.0" text="2XX" />
+    <Button effect="$x3" layoutX="628.0" layoutY="109.0" mnemonicParsing="false" onAction="#processSecondFloorA" prefHeight="48.0" prefWidth="159.0" text="3XX" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

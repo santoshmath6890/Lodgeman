@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, label, button, column-header, column-header-background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.RoomtypeUpdateController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="227.0" layoutY="217.0" text="Name " />
+    <TextField fx:id="InputName" layoutX="375.0" layoutY="211.0" prefWidth="200.0">
+      <effect>
+        <InnerShadow fx:id="x1" />
+      </effect>
+    </TextField>
+    <Label layoutX="227.0" layoutY="274.0" text="Description" />
+    <TextField fx:id="InputDesc" effect="$x1" layoutX="375.0" layoutY="271.0" prefHeight="54.0" prefWidth="200.0" />
+    <Label layoutX="227.0" layoutY="333.0" text="Max Adult" />
+    <TextField fx:id="InputmaxAdult" effect="$x1" layoutX="375.0" layoutY="333.0" prefWidth="200.0" />
+    <Label layoutX="227.0" layoutY="396.0" text="Max Children" />
+    <TextField fx:id="InputmaxChildren" effect="$x1" layoutX="375.0" layoutY="393.0" prefWidth="200.0" />
+    <Label layoutX="227.0" layoutY="454.0" text="Rate" />
+    <TextField fx:id="InputRate" effect="$x1" layoutX="375.0" layoutY="448.0" prefWidth="200.0" />
+    <Button layoutX="411.0" layoutY="529.0" mnemonicParsing="false" onAction="#processUpdate" prefHeight="40.0" prefWidth="129.0" text="Update">
+      <effect>
+        <Bloom threshold="1.0">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

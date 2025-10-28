@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="1068.0" styleClass="text-field, table-view, table-row-cell, table-cell, label-header, label-bright, button, column-header, column-header-background, label" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.RoomtypeAddController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1068.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1068.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label text="Room Type Name" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="214.0">
+      <font>
+        <Font name="Leelawadee" size="22.0" />
+      </font>
+    </Label>
+    <TextField fx:id="mRoomTypeName" prefHeight="46.0" prefWidth="492.0" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="204.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextField>
+    <Label text="Description" textFill="WHITE" AnchorPane.leftAnchor="96.0" AnchorPane.topAnchor="285.0">
+      <font>
+        <Font name="Leelawadee" size="30.0" />
+      </font>
+    </Label>
+    <TextArea fx:id="mRoomDesc" prefHeight="114.0" prefWidth="492.0" wrapText="true" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="285.0">
+      <effect>
+        <InnerShadow />
+      </effect>
+    </TextArea>
+    <Label text="Adults allowed" textFill="WHITE" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="442.0">
+      <font>
+        <Font name="Leelawadee" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="mMaxAdult" layoutX="450.0" layoutY="447.0" prefHeight="46.0" prefWidth="115.0">
+      <effect>
+        <InnerShadow fx:id="x2" />
+      </effect>
+    </TextField>
+    <Label font="$x1" text="Children allowed" textFill="WHITE" AnchorPane.leftAnchor="573.0" AnchorPane.topAnchor="442.0" />
+    <TextField fx:id="rate" effect="$x2" layoutX="782.0" layoutY="447.0" prefHeight="46.0" prefWidth="115.0" />
+    <Label layoutX="507.0" layoutY="524.0" text="Rate" />
+    <TextField fx:id="mMaxChild" effect="$x2" layoutX="580.0" layoutY="517.0" prefHeight="46.0" prefWidth="115.0" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>

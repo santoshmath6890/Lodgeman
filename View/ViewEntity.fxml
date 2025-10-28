@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="button, text-field, table-view, table-row-cell, table-cell, label-header, column-header, column-header-background, label, label-bright" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="lodgeman.lalitman.controller.ViewEntityController">
+  <children>
+    <AnchorPane prefHeight="82.0" prefWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <fx:include source="File.fxml" prefHeight="82.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <ImageView id="home" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processHome" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/home.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="back_thumb-6243_184x184" fitHeight="97.0" fitWidth="91.0" onMouseClicked="#processBack" pickOnBounds="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+      <image>
+        <Image url="@../media/New%20folder/back_thumb-6243_184x184.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Button layoutX="183.0" layoutY="228.0" mnemonicParsing="false" onAction="#processAdvanceBookings" prefHeight="105.0" prefWidth="260.9999000000025" text="Advance Booking">
+      <effect>
+        <Bloom threshold="1.0" fx:id="x1">
+          <input>
+            <DropShadow />
+          </input>
+        </Bloom>
+      </effect>
+    </Button>
+    <Button effect="$x1" layoutX="506.0" layoutY="228.0" mnemonicParsing="false" onAction="#processAdjustReservationPayments" prefHeight="105.0" prefWidth="261.0" text="Reservation Payment " />
+    <Button effect="$x1" layoutX="825.0" layoutY="228.0" mnemonicParsing="false" onAction="#processViewAdvanceBookings" prefHeight="105.0" prefWidth="261.0" text="View Advance Bookings" />
+    <Button effect="$x1" layoutX="183.0" layoutY="381.0" mnemonicParsing="false" onAction="#processReservation" prefHeight="97.0" prefWidth="261.0" text="Reservation" />
+    <Button effect="$x1" layoutX="506.0" layoutY="381.0" mnemonicParsing="false" onAction="#processVewReservationWOAdvance" prefHeight="97.0" prefWidth="261.0" text="View Reservation" />
+    <ImageView id="companylogo" pickOnBounds="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <image>
+        <Image url="@../media/companylogo.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@generic.css" />
+  </stylesheets>
+</AnchorPane>
